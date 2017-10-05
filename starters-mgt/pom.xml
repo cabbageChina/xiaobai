@@ -9,11 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    <modules>
-        <module>web-starters</module>
-        <module>api-starters</module>
-        <module>internal-api-starters</module>
-    </modules>
 
+    <modules>
+        <module>internal-api-starters</module>
+        <module>api-starters</module>
+        <module>web-starters</module>
+    </modules>
 
 </project>
