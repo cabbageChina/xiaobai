@@ -19,4 +19,11 @@
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
     </build>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.xiaobai.platform.account</groupId>
+            <artifactId>account-data</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>

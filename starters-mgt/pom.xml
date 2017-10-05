@@ -14,6 +14,27 @@
         <module>internal-api-starters</module>
         <module>api-starters</module>
         <module>web-starters</module>
+        <module>kotlin-starters</module>
     </modules>
 
+    <properties>
+        <kotlin.version>1.1.51</kotlin.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jre8</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-reflect</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+
+
+    </dependencies>
 </project>
