@@ -9,5 +9,9 @@
 	<packaging>jar</packaging>
 	<name>account-data</name>
 
+	<build>
+		<sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+	</build>
+
 
 </project>
