@@ -12,6 +12,7 @@
     <modules>
         <module>web-starters</module>
         <module>api-starters</module>
+        <module>internal-api-starters</module>
     </modules>
 
 
