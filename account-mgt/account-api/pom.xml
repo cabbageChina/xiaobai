@@ -2,20 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <groupId>com.xiaobai.platform</groupId>
+    <!--<parent>
+        <groupId>com.xiaobai.platform.starters</groupId>
         <artifactId>api-starters</artifactId>
         <version>1.0-SNAPSHOT</version>
-    </parent>
+    </parent>-->
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.xiaobai.platform.account</groupId>
     <artifactId>account-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.xiaobai.platform.account</groupId>
-            <artifactId>account-data</artifactId>
-        </dependency>
-    </dependencies>
+    <name>account-service</name>
+    <description>Demo project for Spring Boot</description>
 
 </project>
