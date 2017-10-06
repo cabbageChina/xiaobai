@@ -1,6 +1,7 @@
 package com.xiaobai.platform.account.data.entity
 
-import java.time.Instant
+import com.fasterxml.jackson.annotation.JsonFormat
+import java.time.LocalDateTime
 
 /**
  *
@@ -10,5 +11,6 @@ data class Account(
         val id: Long,
         val username: String,
         val password: String,
-        val createTime: Instant
+        @get:JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+        val createTime: LocalDateTime
 )

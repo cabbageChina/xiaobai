@@ -19,6 +19,7 @@
 
     <properties>
         <kotlin.version>1.1.51</kotlin.version>
+        <jackson.version>2.9.1</jackson.version>
     </properties>
 
     <dependencies>
@@ -33,6 +34,29 @@
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-reflect</artifactId>
             <version>${kotlin.version}</version>
+        </dependency>
+
+        <!-- jackson -->
+        <dependency> <!-- Java 8 Parameter names -->
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-parameter-names</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency> <!-- Java 8 Optional -->
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jdk8</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency> <!-- Java 8 LocalDate/Time -->
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <dependency> <!-- Kotlin class and data classes without default constructor -->
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-kotlin</artifactId>
+            <version>2.9.1</version>
         </dependency>
 
 
