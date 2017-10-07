@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 9999
   context-path: /api/v1/lott
 spring:
   application:
@@ -14,15 +14,15 @@ spring:
           autoCreateTopics: true
           minPartitionCount: 1
       bindings:
-        output:
-          destination: hello.topic
+        lottDataDrawOutput:
+          destination: draw.open.data.topic
           content-type: application/octet-stream
           producer:
             partitionCount: 1
-        input:
-          destination: hello.topic
+        lottDataDrawInput:
+          destination: draw.open.data.topic
           content-type: application/octet-stream
-          group: hello-group
+          group: open-lott-data-group
           consumer:
             autoCommitOffset: false
             concurrency: 1
