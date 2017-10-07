@@ -13,10 +13,10 @@ import org.springframework.context.annotation.Configuration
  *  @author  : xiaobai
  */
 @Configuration
-class JacksonConfiguration {
+open class JacksonConfiguration {
 
     @Bean
-    fun objectMapper(): ObjectMapper =
+    open fun objectMapper(): ObjectMapper =
         ObjectMapper().registerModule(JavaTimeModule())
                 .registerModule(ParameterNamesModule())
                 .registerModule(Jdk8Module())
