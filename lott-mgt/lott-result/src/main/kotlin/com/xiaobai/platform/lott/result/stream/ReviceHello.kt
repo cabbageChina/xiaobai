@@ -1,0 +1,25 @@
+package com.xiaobai.platform.lott.result.stream
+
+import org.slf4j.LoggerFactory
+import org.springframework.cloud.stream.annotation.EnableBinding
+import org.springframework.cloud.stream.annotation.StreamListener
+import org.springframework.cloud.stream.messaging.Sink
+import org.springframework.messaging.Message
+
+/**
+ *
+ *  @author  : xiaobai
+ */
+@EnableBinding(Sink::class)
+open class ReviceHello {
+
+    val log = LoggerFactory.getLogger(ReviceHello::class.java);
+
+    @StreamListener(Sink.INPUT)
+    open fun revice(message: Message<ByteArray>) {
+        val msg = String(message.payload)
+        log.info("收到的信息：$msg")
+    }
+
+
+}

@@ -1,0 +1,39 @@
+server:
+  port: 9001
+  context-path: /api/v1/lott
+spring:
+  application:
+    name: lott-result
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 192.168.2.165:9092
+          zk-nodes: 192.168.2.165:2181
+          autoAddPartitions: true
+          autoCreateTopics: true
+          minPartitionCount: 1
+      bindings:
+        output:
+          destination: hello.topic
+          content-type: application/octet-stream
+          producer:
+            partitionCount: 1
+        input:
+          destination: hello.topic
+          content-type: application/octet-stream
+          group: hello-group
+          consumer:
+            autoCommitOffset: false
+            concurrency: 1
+            partitioned: false
+      default-binder: kafka
+    consul:
+      host: 192.168.2.165
+      port: 8500
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
