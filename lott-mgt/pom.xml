@@ -11,6 +11,7 @@
 
     <modules>
         <module>lott-result</module>
+        <module>lott-task</module>
     </modules>
 
 

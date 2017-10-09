@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component
 @Component
 open class SendHello(private val source: LottDataDrawSource) {
 
-    val log = LoggerFactory.getLogger(this::class.java)
+    private val log = LoggerFactory.getLogger(this::class.java)
 
     open fun sendProcess(name: String) {
         val msg = "$name say hello."

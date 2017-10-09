@@ -1,0 +1,17 @@
+server:
+  port: 9998
+  context-path: /api/v1/lott/task
+spring:
+  application:
+    name: lott-task
+    consul:
+      host: 192.168.2.165
+      port: 8500
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+logging:
+  level: info
