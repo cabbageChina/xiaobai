@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 /**
  *
  *  @author  : xiaobai
+ *  
+ *
  */
 @SpringBootApplication
 open class LottResultApplication

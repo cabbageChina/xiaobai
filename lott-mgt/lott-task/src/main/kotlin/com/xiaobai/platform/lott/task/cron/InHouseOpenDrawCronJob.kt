@@ -11,9 +11,6 @@ open class InHouseOpenDrawCronJob {
 
     open fun startOpenDraw() {
 
-
-
     }
-
 
 }
