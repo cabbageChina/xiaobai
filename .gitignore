@@ -15,6 +15,7 @@ target/
 *.iml
 *.ipr
 
+
 ### NetBeans ###
 nbproject/private/
 build/
@@ -24,3 +25,5 @@ nbdist/
 .nb-gradle/
 .gitignore
 account-mgt/account-service/.mvn/
+/target/
+*/target/
