@@ -9,9 +9,7 @@ data class BettingSlip(
         val  bettingMoney: BigDecimal,
         val bettingNumbers: String) {
 
-
     override fun toString(): String {
-        return super.toString()
+        return "BettingSlip(userId=$userId, issueNo='$issueNo', bettingMoney=$bettingMoney, bettingNumbers='$bettingNumbers')"
     }
-
 }
