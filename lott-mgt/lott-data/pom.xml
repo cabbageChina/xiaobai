@@ -15,4 +15,20 @@
         <relativePath/>
     </parent>
 
+    <dependencies>
+        <dependency>
+            <groupId>net.nullschool</groupId>
+            <artifactId>drnglib</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
 </project>

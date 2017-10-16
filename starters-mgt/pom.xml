@@ -19,8 +19,8 @@
     <modules>
         <module>internal-api-starters</module>
         <module>api-starters</module>
-        <module>web-starters</module>
         <module>kotlin-starters</module>
+        <module>web-starters</module>
     </modules>
 
     <properties>
