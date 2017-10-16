@@ -1,6 +1,5 @@
 package com.xiaobai.platform.lott.data.test
 
-import com.google.common.collect.Lists
 import net.nullschool.util.DigitalRandom
 import org.junit.Test
 import java.util.stream.Collectors
@@ -32,9 +31,8 @@ open class HttpTest {
 
         val allSortedArray = allArray.stream().sorted{a,b -> b.num - a.num}.collect(Collectors.toList())
 
-        allSortedArray.forEach {num -> println("${num.x}-${num.y}-${num.num} ,")}
+        allSortedArray.forEach {println("${it.x}-${it.y}-${it.num} ,")}
         println()
-
 
     }
 
