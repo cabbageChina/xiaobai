@@ -36,7 +36,7 @@ open class DrawResultEnricherSink {
 
         // 从redis中删除这些订单
 
-        originalOrders.forEach(::print)
+//        originalOrders.forEach(::println)
     }
 
 
