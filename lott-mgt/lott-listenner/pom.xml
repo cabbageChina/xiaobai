@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.xiaobai.platform.lott</groupId>
-	<artifactId>lott-task</artifactId>
+	<artifactId>lott-listenner</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>lott-task</name>
+	<name>lott-listenner</name>
 
     <parent>
         <groupId>com.xiaobai.platform.starters</groupId>
@@ -23,6 +23,13 @@
 		</dependency>-->
 
         <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
             <groupId>net.nullschool</groupId>
             <artifactId>drnglib</artifactId>
             <version>1.0.0</version>
@@ -30,16 +37,8 @@
 
         <dependency>
             <groupId>com.xiaobai.platform.lott</groupId>
-            <artifactId>lott-listenner</artifactId>
+            <artifactId>lott-data</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
         </dependency>
 
     </dependencies>

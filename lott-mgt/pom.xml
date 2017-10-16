@@ -12,8 +12,8 @@
     <modules>
         <module>lott-result</module>
         <module>lott-task</module>
+		<module>lott-listenner</module>
+        <module>lott-data</module>
     </modules>
-
-
 
 </project>

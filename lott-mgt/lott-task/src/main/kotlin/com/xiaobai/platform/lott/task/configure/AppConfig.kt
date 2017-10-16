@@ -41,7 +41,7 @@ open class AppConfig: SchedulingConfigurer, AsyncConfigurer {
 
 
     override fun getAsyncUncaughtExceptionHandler(): AsyncUncaughtExceptionHandler {
-        return AsyncUncaughtExceptionHandler() {
+        return AsyncUncaughtExceptionHandler {
             ex, method, params ->
             run {
                 log.error("task executor error", ex)

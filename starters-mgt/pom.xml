@@ -70,6 +70,12 @@
             <version>2.9.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
@@ -83,5 +89,22 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resouces</directory>
+            </resource>
+        </resources>
+
+        <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
+        <testResources>
+            <testResource>
+                <directory>${project.basedir}/src/test/resouces</directory>
+            </testResource>
+        </testResources>
+
+    </build>
 
 </project>

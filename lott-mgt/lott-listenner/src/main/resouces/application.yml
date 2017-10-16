@@ -1,0 +1,17 @@
+server:
+  port: 9998
+  context-path: /api/v1/lott/listenner
+spring:
+  application:
+    name: lott-listenner
+    consul:
+      host: 192.168.2.165
+      port: 8500
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+logging:
+  level: info
