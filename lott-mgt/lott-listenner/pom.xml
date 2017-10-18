@@ -23,13 +23,6 @@
 		</dependency>-->
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
             <groupId>net.nullschool</groupId>
             <artifactId>drnglib</artifactId>
             <version>1.0.0</version>
@@ -42,15 +35,5 @@
         </dependency>
 
     </dependencies>
-
-	<build>
-        <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>${project.basedir}/src/main/resouces</directory>
-            </resource>
-        </resources>
-        <!--<testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>-->
-    </build>
 
 </project>

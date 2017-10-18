@@ -8,10 +8,10 @@ import org.springframework.scheduling.annotation.EnableScheduling
  *
  *  @author  : xiaobai
  */
-//@SpringBootApplication
+@SpringBootApplication
 //@EnableScheduling
 open class ListennerApplication
 
-//fun main(args: Array<String>) {
-//    SpringApplication.run(ListennerApplication::class.java)
-//}
+fun main(args: Array<String>) {
+    SpringApplication.run(ListennerApplication::class.java)
+}

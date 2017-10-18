@@ -12,4 +12,5 @@ data class BettingSlip(
     override fun toString(): String {
         return "BettingSlip(userId=$userId, issueNo='$issueNo', bettingMoney=$bettingMoney, bettingNumbers='$bettingNumbers')"
     }
+
 }
