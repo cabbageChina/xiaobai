@@ -10,7 +10,7 @@ open class DrawNumberGeneratorUtils {
 
     companion object {
 
-        open fun generateRandon2FSSC (): String  = Joiner.on(",").join(generateRandonNumbers(smallest = 0, largest = 10, size = 5))
+        fun generateRandon2FSSC (): String  = Joiner.on(",").join(generateRandonNumbers(smallest = 0, largest = 10, size = 5))
 
         private fun generateRandonNumbers(smallest: Int, largest: Int, size:Int): List<Int> {
             val random = DigitalRandom()

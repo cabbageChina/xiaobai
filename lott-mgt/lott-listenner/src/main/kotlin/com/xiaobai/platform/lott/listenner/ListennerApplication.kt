@@ -2,7 +2,6 @@ package com.xiaobai.platform.lott.listenner
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.scheduling.annotation.EnableScheduling
 
 /**
  *
@@ -10,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling
  */
 @SpringBootApplication
 //@EnableScheduling
-open class ListennerApplication
+class ListennerApplication
 
 fun main(args: Array<String>) {
     SpringApplication.run(ListennerApplication::class.java)

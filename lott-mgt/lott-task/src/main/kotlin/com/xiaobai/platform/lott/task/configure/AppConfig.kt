@@ -16,12 +16,12 @@ import java.util.concurrent.Executor
  *  @author  : xiaobai
  */
 @Configuration
-open class AppConfig: SchedulingConfigurer, AsyncConfigurer {
+class AppConfig: SchedulingConfigurer, AsyncConfigurer {
 
     private val log = LoggerFactory.getLogger(this::class.java)
 
     @Bean
-    open fun schedulerExecutor(): Executor {
+    fun schedulerExecutor(): Executor {
         val scheduler = ThreadPoolTaskScheduler()
         scheduler.setThreadGroupName("spring-task-scheduler-")
         scheduler.poolSize = 10

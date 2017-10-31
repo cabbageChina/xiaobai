@@ -11,13 +11,13 @@ import java.time.temporal.ChronoField
  *  @author  : xiaobai
  */
 @Component
-open class OpenDrawFetchCronJob {
+class OpenDrawFetchCronJob {
 
     private val log = LoggerFactory.getLogger(this.javaClass)
 
 
     //@Scheduled(cron = "2/3 * * * * *")
-    open fun startOpenDraw() {
+    fun startOpenDraw() {
 
         val localDateTime = LocalDateTime.now()
         val minute = localDateTime.get(ChronoField.MINUTE_OF_HOUR)

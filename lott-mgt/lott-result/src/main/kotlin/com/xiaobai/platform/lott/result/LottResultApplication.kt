@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
  *
  */
 @SpringBootApplication
-open class LottResultApplication
+class LottResultApplication
 
 fun main(args: Array<String>) {
     SpringApplication.run(LottResultApplication::class.java, *args)

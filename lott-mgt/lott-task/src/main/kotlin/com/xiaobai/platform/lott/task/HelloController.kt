@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController
  *  @author  : xiaobai
  */
 @RestController
-open class HelloController(private val openDrawFetchCronJob: OpenDrawFetchCronJob) {
+class HelloController(private val openDrawFetchCronJob: OpenDrawFetchCronJob) {
 
     @GetMapping("/sayHello")
-    open fun sayHello() = "hello"
+    fun sayHello() = "hello"
 
     @GetMapping("/drawLott")
-    open fun drawLott(): String {
+    fun drawLott(): String {
         openDrawFetchCronJob.startOpenDraw()
         return "success"
     }

@@ -11,11 +11,11 @@ import org.springframework.stereotype.Component
  */
 @EnableBinding(LottDataDrawSource::class)
 @Component
-open class SendHello(private val source: LottDataDrawSource) {
+class SendHello(private val source: LottDataDrawSource) {
 
     private val log = LoggerFactory.getLogger(this::class.java)
 
-    open fun sendProcess(name: String) {
+    fun sendProcess(name: String) {
         val msg = "$name say hello."
         log.info("发送数据：$msg")
         source.output.send(MessageBuilder.withPayload(msg.toByteArray()).build())

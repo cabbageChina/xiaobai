@@ -6,9 +6,9 @@ import com.xiaobai.platform.lott.listenner.random.DrawNumberGeneratorUtils
 import org.springframework.stereotype.Component
 
 @Component
-open class DrawResultEnricherSink {
+class DrawResultEnricherSink {
 
-    open fun processNormalIssueNo(issueNo: String, drawNumbers: String) {
+    fun processNormalIssueNo(issueNo: String, drawNumbers: String) {
 
         // 从redis中判断是否有该期号的订单
 

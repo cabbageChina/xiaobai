@@ -12,12 +12,12 @@ import java.time.LocalDateTime
  */
 @Component
 @EnableScheduling
-open class TestCronJob {
+class TestCronJob {
 
     private val log = LoggerFactory.getLogger(this.javaClass)
 
     @Scheduled(cron = "2/3 * * * * *")
-    open fun startOpenDraw() {
+    fun startOpenDraw() {
         log.error("执行时间：{}", LocalDateTime.now())
 
     }

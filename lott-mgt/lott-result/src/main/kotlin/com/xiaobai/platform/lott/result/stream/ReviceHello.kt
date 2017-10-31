@@ -10,12 +10,12 @@ import org.springframework.messaging.Message
  *  @author  : xiaobai
  */
 @EnableBinding(LottDataDrawSink::class)
-open class ReviceHello {
+class ReviceHello {
 
     val log = LoggerFactory.getLogger(ReviceHello::class.java);
 
     @StreamListener(value = LottDataDrawSink.INPUT)
-    open fun revice(message: Message<ByteArray>) {
+    fun revice(message: Message<ByteArray>) {
 
         val msg = String(message.payload)
         log.info("收到的信息：$msg")

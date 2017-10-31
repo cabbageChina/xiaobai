@@ -22,7 +22,7 @@ interface LottDataDrawSource {
 }
 
 
-open interface LottDataDrawSink {
+interface LottDataDrawSink {
 
     companion object {
         const val INPUT = "lottDataDrawInput"
