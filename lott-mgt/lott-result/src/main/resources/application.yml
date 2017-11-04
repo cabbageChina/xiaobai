@@ -8,8 +8,8 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: 192.168.2.165:9092
-          zk-nodes: 192.168.2.165:2181
+          brokers: 192.168.0.25:9092
+          zk-nodes: 192.168.0.25:2181
           autoAddPartitions: true
           autoCreateTopics: true
           minPartitionCount: 1
@@ -29,7 +29,7 @@ spring:
             partitioned: false
       default-binder: kafka
     consul:
-      host: 192.168.2.165
+      host: 192.168.0.25
       port: 8500
 security:
   basic:

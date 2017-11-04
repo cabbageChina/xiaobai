@@ -16,7 +16,7 @@ class TestCronJob {
 
     private val log = LoggerFactory.getLogger(this.javaClass)
 
-    @Scheduled(cron = "2/3 * * * * *")
+//    @Scheduled(cron = "2/3 * * * * *")
     fun startOpenDraw() {
         log.error("执行时间：{}", LocalDateTime.now())
 
